@@ -27,8 +27,11 @@
 		<project.type>multi</project.type>
 		<dist.id>spring-data-mongodb</dist.id>
 		<springdata.commons>3.0.0-SNAPSHOT</springdata.commons>
+        <micrometer>1.10.0-SNAPSHOT</micrometer>
+        <micrometer-tracing>1.0.0-SNAPSHOT</micrometer-tracing>
+        <micrometer-docs-generator>1.0.0-SNAPSHOT</micrometer-docs-generator>
 		<mongo>4.7.1</mongo>
-		<mongo.reactivestreams>${mongo}</mongo.reactivestreams>
+        <mongo.reactivestreams>${mongo}</mongo.reactivestreams>
 		<jmh.version>1.19</jmh.version>
 	</properties>
 
