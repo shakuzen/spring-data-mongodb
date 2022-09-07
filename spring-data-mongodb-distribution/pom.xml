@@ -41,24 +41,22 @@
 				<executions>
 					<execution>
 						<id>generate-metrics-metadata</id>
-						<phase>prepare-package</phase>
+						<phase>generate-resources</phase>
 						<goals>
 							<goal>java</goal>
 						</goals>
 						<configuration>
-							<mainClass>io.micrometer.docs.metrics.DocsFromSources
-							</mainClass>
+							<mainClass>io.micrometer.docs.metrics.DocsFromSources</mainClass>
 						</configuration>
 					</execution>
 					<execution>
 						<id>generate-tracing-metadata</id>
-						<phase>prepare-package</phase>
+						<phase>generate-resources</phase>
 						<goals>
 							<goal>java</goal>
 						</goals>
 						<configuration>
-							<mainClass>io.micrometer.docs.spans.DocsFromSources
-							</mainClass>
+							<mainClass>io.micrometer.docs.spans.DocsFromSources</mainClass>
 						</configuration>
 					</execution>
 				</executions>
@@ -90,8 +88,7 @@
 				<artifactId>asciidoctor-maven-plugin</artifactId>
 				<configuration>
 					<attributes>
-						<mongo-reactivestreams>${mongo.reactivestreams}
-						</mongo-reactivestreams>
+						<mongo-reactivestreams>${mongo.reactivestreams}</mongo-reactivestreams>
 						<reactor>${reactor}</reactor>
 					</attributes>
 				</configuration>
